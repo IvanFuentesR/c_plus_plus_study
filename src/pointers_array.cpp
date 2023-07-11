@@ -23,6 +23,21 @@ int pointers_array_size_of() {
     return 0;
 }
 
+int pointers_delete() {
+    int *p;
+    p = new int[5];
+    p[0] = 1;
+    p[1] = 2;
+    p[2] = 3;
+    p[3] = 4;
+    p[4] = 5;
+
+    // Delete the array, this is c++
+    delete []p;
+    // if you want to use C you can use free function, but it is not recommended.
+    return 0;
+}
+
 int main() {
     int A[5]={2,4,6,8,10};
     int *p;
